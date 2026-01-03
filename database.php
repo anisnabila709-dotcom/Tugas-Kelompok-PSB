@@ -1,12 +1,12 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "todo_app";
+$DB_HOST = 'localhost';
+$DB_USER = 'root';
+$DB_PASS = ''; // kosongkan kalau phpMyAdmin tidak minta login
+$DB_NAME = 'todo_app'; // ganti sesuai database kamu
 
-$conn = mysqli_connect($host, $user, $pass, $db);
+$conn = mysqli_connect($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
 
 if (!$conn) {
-  die("Koneksi gagal: " . mysqli_connect_error());
+    die("Gagal koneksi MySQL: " . mysqli_connect_error());
 }
 ?>
