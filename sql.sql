@@ -27,4 +27,8 @@ CREATE TABLE tasks (
 
 
 INSERT INTO tasks (user_id, title, description, due_date)
+<<<<<<< HEAD
 VALUES (1, 'Belajar PHP', 'project back-end web dev', '2026-01-12');
+=======
+VALUES (1, 'Belajar PHP', 'project back-end web dev', '2026-01-12');
+>>>>>>> d5a1ac101ea3da817e661d9d7103b3db0808fc60

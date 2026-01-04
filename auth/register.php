@@ -35,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="card-body">
       <h3 class="card-title text-center">Buat Akun Baru</h3>
       <p class="text-center text-muted">Silakan isi form untuk mendaftar</p>
+<<<<<<< HEAD
 
       <?php if (isset($error)) : ?>
         <div class="alert alert-danger"><?= $error ?></div>
@@ -46,6 +47,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div class="mb-3">
           <input type="email" name="email" class="form-control" placeholder="Email" required>
+=======
+      <?php if (isset($error)) echo "<div class='alert alert-danger'>$error</div>"; ?>
+      <form method="POST">
+        <div class="mb-3">
+          <input type="text" name="username" class="form-control" placeholder="Username" required>
+>>>>>>> d5a1ac101ea3da817e661d9d7103b3db0808fc60
         </div>
         <div class="mb-3">
           <input type="password" name="password" class="form-control" placeholder="Password" required>
