@@ -48,11 +48,34 @@ Aplikasi Todo List Student Planner adalah aplikasi web berbasis PHP native yang 
 
 
 ## Struktur folder
+1. assets
+2. auth
+   - login.php
+   - logout.php
+   - register.php
+3. tasks
+   - add.php
+   - delete.php
+   - edit.php
+   - index.php
+4. database.php
+5. hash.php
+6. index.php
+7. README.md
+8. session.php
+9. style.css
+10. todo_app.sql
 
 
 ## Cara instalasi dan menjalankan aplikasi
+
 1. Buat database dan tabel:
    ```sql
    CREATE DATABASE IF NOT EXISTS tugas_psb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
    USE tugas_psb;
    -- Tabel users & tasks ada di file SQL pada dokumentasi kode (lihat repository).
+
+## Alur Penggunaan Aplikasi
+Pengguna terlebih dahulu melakukan registrasi akun untuk dapat menggunakan aplikasi. Setelah registrasi berhasil, pengguna melakukan login ke dalam sistem. Ketika sudah masuk, pengguna dapat mengelola data tugas sesuai dengan kebutuhan, mulai dari menambahkan tugas baru, mengubah data tugas, hingga menghapus tugas yang tidak diperlukan.
+
+Setiap tugas yang telah diselesaikan dapat ditandai dengan mencentang kotak status selesai. Lalu setelah seluruh aktivitas selesai dilakukan, pengguna dapat keluar dari sistem dengan melakukan logout agar sesi penggunaan berakhir dengan aman.
