@@ -1,7 +1,7 @@
 # Aplikasi Todo List (PHP Native) — CRUD + Autentikasi
 
 ## Deskripsi singkat
-Aplikasi web sederhana untuk manajemen tugas dengan fitur **registrasi/login**, **session management**, dan **CRUD** tugas (judul, deskripsi, tanggal jatuh tempo), termasuk **filtrasi status** dan **pencarian**.
+Aplikasi Todo List Student Planner adalah aplikasi web berbasis PHP native yang digunakan untuk membantu pengguna dalam mengelola tugas pribadi. Aplikasi ini menyediakan fitur autentikasi pengguna, manajemen tugas (CRUD), pencarian, serta filtrasi status tugas. Setiap data tugas terhubung langsung dengan akun pengguna sehingga keamanan dan privasi data tetap terjaga.
 
 ## Daftar anggota
 - Ni Putu Risma Pradnya Maharani (240030133) 
@@ -11,17 +11,41 @@ Aplikasi web sederhana untuk manajemen tugas dengan fitur **registrasi/login**, 
 
 
 ## Lingkungan pengembangan
-- PHP 8.x (native, tanpa framework)
+- PHP native
 - MariaDB/MySQL
-- Server lokal (XAMPP/Laragon/WAMP)
+- Server lokal (XAMPP)
 - HTML, CSS, JavaScript
 
 ## Hasil pengembangan (fitur utama)
-- Autentikasi: Register, Login, Logout, `password_hash/password_verify`, session timeout.
-- CRUD Tugas: Create, Read (list), Update, Delete, toggle selesai/belum.
-- Filtrasi: Berdasarkan status selesai/belum.
-- Pencarian: Keyword pada judul/deskripsi.
-- Keamanan: Prepared statements, sanitasi output (htmlspecialchars).
+1. Autentikasi 
+- Registrasi pengguna dengan password yang di-hash menggunakan password_hash()
+-Login menggunakan verifikasi password_verify()
+-Logout dan penghapusan sesi
+-Proteksi halaman agar hanya bisa diakses oleh pengguna yang sudah login
+-Session timeout untuk meningkatkan keamanan
+
+2. CRUD Tugas
+- Menambahkan tugas baru (judul, deskripsi, tanggal jatuh tempo)
+- Menampilkan daftar tugas milik pengguna
+- Mengedit tugas
+- Menghapus tugas
+- Menandai tugas selesai maupun yang belum selesai
+
+3. Filter & Pencarian
+- Filter tugas berdasarkan status: Semua, Pending, dan Selesai
+- Pencarian tugas berdasarkan judul atau deskripsi
+
+4. Manajemen Session
+- Session berbasis cookie yang lebih aman
+- Otomatis logout jika tidak aktif selama waktu tertentu
+- Setiap tugas terikat dengan user_id
+
+5. Keamanan
+- Menggunakan prepared statements (MySQLi & PDO) untuk seluruh query database guna mencegah serangan SQL Injection.
+- Menerapkan sanitasi output menggunakan `htmlspecialchars()` saat menampilkan data ke halaman web untuk mencegah serangan Cross-Site Scripting (XSS).
+- Password pengguna disimpan menggunakan metode hashing (`password_hash()` dan `password_verify()`).
+- Manajemen sesi yang aman dengan session timeout dan proteksi halaman.
+
 
 ## Struktur folder
 
