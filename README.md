@@ -4,11 +4,11 @@
 Aplikasi web sederhana untuk manajemen tugas dengan fitur **registrasi/login**, **session management**, dan **CRUD** tugas (judul, deskripsi, tanggal jatuh tempo), termasuk **filtrasi status** dan **pencarian**.
 
 ## Daftar anggota
-- Nama 1 — NIM — GitHub: @username — Peran: Backend
-- Nama 2 — NIM — GitHub: @username — Peran: Database & Auth
-- Nama 3 — NIM — GitHub: @username — Peran: Frontend
+- Ni Putu Risma Pradnya Maharani (240030133) 
+- Denis Saputri (240030096) 
+- Anis Nabila (240030129) 
 - Anak Agung Istri Sri Wangi Nariswari(240030378)
-peran:
+
 
 ## Lingkungan pengembangan
 - PHP 8.x (native, tanpa framework)
