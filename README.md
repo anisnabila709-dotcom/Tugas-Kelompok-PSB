@@ -5,15 +5,15 @@ Aplikasi Todo List Student Planner adalah aplikasi web berbasis PHP native yang 
 
 ## Daftar anggota
 - Ni Putu Risma Pradnya Maharani (240030133), @rismaPradnya
-- Denis Saputri (240030096), @
-- Anis Nabila (240030129), @
-- Anak Agung Istri Sri Wangi Nariswari(240030378), @
+- Denis Saputri (240030096), @denissaputri1234-stack
+- Anis Nabila (240030129), @anisnabila709-dotcom 
+- Anak Agung Istri Sri Wangi Nariswari(240030378), @jungsri81-art
 
 
 ## Lingkungan pengembangan
 - PHP native
 - MariaDB/MySQL
-- Server lokal (PHP Built-in Server)
+- Server lokal (PHP Built-in Server & XAMPP)
 - HTML, CSS, JavaScript
 
 ## Hasil pengembangan (fitur utama)
@@ -77,17 +77,27 @@ todo-list-app/
 ## Cara instalasi dan menjalankan aplikasi
 1. Buat database dan tabel:
    ```sql
-   CREATE DATABASE IF NOT EXISTS todo_app;
+   CREATE DATABASE todo_app;
    USE todo_app;
    
    -- Tabel users & tasks ada di file SQL pada dokumentasi kode (lihat repository).
    
 2. Lakukan konfigurasi koneksi database pada file database.php sesuai dengan pengaturan server lokal yang digunakan.
    
+```php
 <?php
-// Kode koneksi database terdapat pada file database.php
-// dan disesuaikan dengan konfigurasi server lokal masing-masing
+$DB_HOST = 'localhost';
+$DB_USER = 'root';
+$DB_PASS = ''; // kosongkan kalau phpMyAdmin tidak minta login
+$DB_NAME = 'todo_app'; // ganti sesuai database yang anda buat
+
+$conn = mysqli_connect($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
+
+if (!$conn) {
+    die("Gagal koneksi MySQL: " . mysqli_connect_error());
+}
 ?>
+```
 
 3. Pastikan web server dan database server telah dijalankan, kemudian akses aplikasi melalui browser menggunakan alamat http://localhost/nama-folder-project. Apabila halaman login dapat ditampilkan tanpa error, maka aplikasi telah berhasil dijalankan.
 
