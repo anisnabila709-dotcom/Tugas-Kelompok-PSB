@@ -48,7 +48,7 @@ Aplikasi Todo List Student Planner adalah aplikasi web berbasis PHP native yang 
 
 
 ## Struktur folder todo-list app
-
+```
 todo-list-app/
 ├── assets/                 # Menyimpan file pendukung tampilan aplikasi
 │   └── style.css           # File CSS untuk mengatur desain dan layout aplikasi
@@ -70,7 +70,7 @@ todo-list-app/
 ├── index.php                # Halaman utama / dashboard aplikasi
 ├── todo_app.sql             # File SQL struktur database aplikasi
 └── README.md                # Dokumentasi project
-
+```
 
 
 
