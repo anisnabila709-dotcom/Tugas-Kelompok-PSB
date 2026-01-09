@@ -4,10 +4,10 @@
 Aplikasi Todo List Student Planner adalah aplikasi web berbasis PHP native yang digunakan untuk membantu pengguna dalam mengelola tugas pribadi. Aplikasi ini menyediakan fitur autentikasi pengguna, manajemen tugas (CRUD), pencarian, serta filtrasi status tugas. Setiap data tugas terhubung langsung dengan akun pengguna sehingga keamanan dan privasi data tetap terjaga.
 
 ## Daftar anggota
-- Ni Putu Risma Pradnya Maharani (240030133) 
-- Denis Saputri (240030096) 
-- Anis Nabila (240030129) 
-- Anak Agung Istri Sri Wangi Nariswari(240030378)
+- Ni Putu Risma Pradnya Maharani (240030133), @rismaPradnya
+- Denis Saputri (240030096), @
+- Anis Nabila (240030129), @
+- Anak Agung Istri Sri Wangi Nariswari(240030378), @
 
 
 ## Lingkungan pengembangan
@@ -47,24 +47,29 @@ Aplikasi Todo List Student Planner adalah aplikasi web berbasis PHP native yang 
 - Manajemen sesi yang aman dengan session timeout dan proteksi halaman.
 
 
-## Struktur folder
-1. assets
-2. auth
-   - login.php
-   - logout.php
-   - register.php
-3. tasks
-   - add.php
-   - delete.php
-   - edit.php
-   - index.php
-4. database.php
-5. hash.php
-6. index.php
-7. README.md
-8. session.php
-9. style.css
-10. todo_app.sql
+## Struktur folder todo-list app
+
+├── assets/                 # Menyimpan file pendukung tampilan aplikasi
+│   └── style.css           # File CSS untuk mengatur desain dan layout aplikasi
+│
+├── auth/                   # Modul autentikasi pengguna
+│   ├── login.php           # Proses login pengguna
+│   ├── register.php        # Proses registrasi pengguna (password di-hash)
+│   └── logout.php          # Proses logout dan penghapusan session
+│
+├── tasks/                  # Modul pengelolaan tugas (CRUD)
+│   ├── index.php           # Menampilkan daftar tugas milik pengguna
+│   ├── add.php             # Menambahkan tugas baru
+│   ├── edit.php            # Mengedit data tugas
+│   └── delete.php          # Menghapus tugas
+│
+├── database.php             # Konfigurasi koneksi database MySQL/MariaDB
+├── session.php              # Pengelolaan session dan proteksi halaman
+├── hash.php                 # Fungsi pendukung untuk hashing password
+├── index.php                # Halaman utama / dashboard aplikasi
+├── todo_app.sql             # File SQL struktur database aplikasi
+└── README.md                # Dokumentasi project
+
 
 
 ## Cara instalasi dan menjalankan aplikasi
