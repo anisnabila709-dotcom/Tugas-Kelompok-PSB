@@ -49,26 +49,28 @@ Aplikasi Todo List Student Planner adalah aplikasi web berbasis PHP native yang 
 
 ## Struktur folder todo-list app
 
-1. assets/                 # Menyimpan file pendukung tampilan aplikasi
-   └── style.css           # File CSS untuk mengatur desain dan layout aplikasi
+todo-list-app/
+├── assets/                 # Menyimpan file pendukung tampilan aplikasi
+│   └── style.css           # File CSS untuk mengatur desain dan layout aplikasi
+│
+├── auth/                   # Modul autentikasi pengguna
+│   ├── login.php           # Proses login pengguna
+│   ├── register.php        # Proses registrasi pengguna (password di-hash)
+│   └── logout.php          # Proses logout dan penghapusan session
+│
+├── tasks/                  # Modul pengelolaan tugas (CRUD)
+│   ├── index.php           # Menampilkan daftar tugas milik pengguna
+│   ├── add.php             # Menambahkan tugas baru
+│   ├── edit.php            # Mengedit data tugas
+│   └── delete.php          # Menghapus tugas
+│
+├── database.php             # Konfigurasi koneksi database MySQL/MariaDB
+├── session.php              # Pengelolaan session dan proteksi halaman
+├── hash.php                 # Fungsi pendukung untuk hashing password
+├── index.php                # Halaman utama / dashboard aplikasi
+├── todo_app.sql             # File SQL struktur database aplikasi
+└── README.md                # Dokumentasi project
 
-2. auth/                   # Modul autentikasi pengguna
-   ├── login.php           # Proses login pengguna
-   ├── register.php        # Proses registrasi pengguna (password di-hash)
-   └── logout.php          # Proses logout dan penghapusan session
-
-3. tasks/                  # Modul pengelolaan tugas (CRUD)
-   ├── index.php           # Menampilkan daftar tugas milik pengguna
-   ├── add.php             # Menambahkan tugas baru
-   ├── edit.php            # Mengedit data tugas
-   └── delete.php          # Menghapus tugas
-
-4. database.php             # Konfigurasi koneksi database MySQL/MariaDB
-5. session.php              # Pengelolaan session dan proteksi halaman
-6. hash.php                 # Fungsi pendukung untuk hashing password
-7. index.php                # Halaman utama / dashboard aplikasi
-8. todo_app.sql             # File SQL struktur database aplikasi
-9. README.md                # Dokumentasi project
 
 
 
