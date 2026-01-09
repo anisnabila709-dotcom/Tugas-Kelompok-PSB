@@ -13,7 +13,7 @@ Aplikasi Todo List Student Planner adalah aplikasi web berbasis PHP native yang 
 ## Lingkungan pengembangan
 - PHP native
 - MariaDB/MySQL
-- Server lokal (XAMPP)
+- Server lokal (PHP Built-in Server)
 - HTML, CSS, JavaScript
 
 ## Hasil pengembangan (fitur utama)
