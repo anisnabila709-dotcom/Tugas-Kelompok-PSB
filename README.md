@@ -5,9 +5,13 @@ Aplikasi Todo List Student Planner adalah aplikasi web berbasis PHP native yang 
 
 ## Daftar anggota
 - Ni Putu Risma Pradnya Maharani (240030133), @rismaPradnya
+- risma : readme, database.php, hash.php
 - Denis Saputri (240030096), @denissaputri1234-stack
-- Anis Nabila (240030129), @anisnabila709-dotcom 
+- denis : add.php, index.php, edit.php
+- Anis Nabila (240030129), @anisnabila709-dotcom
+- nabila : css, folder tasks:index.php, delete.php
 - Anak Agung Istri Sri Wangi Nariswari(240030378), @jungsri81-art
+- gung sri : login.php, logout.php, register.php, session.php, todo_app.sql
 
 
 ## Lingkungan pengembangan
